@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/cb_trans"
+            android:checked="true"
+            android:title="translation"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/cb_offset_fun"
+            android:title="offset fun"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/cb_layout_fun"
+            android:title="layout fun"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/cb_scroll_to"
+            android:title="scroll to"
+            app:showAsAction="never"/>
+        <item
+            android:id="@+id/cb_layout_params"
+            android:title="layout params"
+            app:showAsAction="never"/>
+
+        <item
+            android:id="@+id/cb_request_layout"
+            android:title="requestLayout"
+            app:showAsAction="never"/>
+    </group>
+</menu>
