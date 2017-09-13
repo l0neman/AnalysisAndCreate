@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-          package="runing.com.publictools"
+          package="com.runing.publictools"
 >
 
     <application android:allowBackup="true"

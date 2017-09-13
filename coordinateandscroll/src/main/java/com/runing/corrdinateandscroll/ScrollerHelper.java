@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.Scroller;
 
-import runing.com.publictools.view.T;
+import com.runing.publictools.view.T;
 
 /**
  * view滑动方法辅助类
@@ -599,7 +599,7 @@ public final class ScrollerHelper {
         "\nscrollY: " + pScrollY +
         "\n}\n" +
         "MotionEvent: {" +
-        "\n" + "getX: " + mGetX +
+        "\ngetX: " + mGetX +
         "\ngetY: " + mGetY +
         "\ngetRawX: " + mGetRawX +
         "\ngetRawY: " + mGetRawY +

@@ -1,1 +1,1 @@
-include ':coordinateandscroll', ':publictools'
+include ':coordinateandscroll', ':publictools', ':testmodule'
