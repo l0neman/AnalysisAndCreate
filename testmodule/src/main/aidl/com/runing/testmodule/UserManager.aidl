@@ -1,8 +1,8 @@
 // UserManager.aidl
-package com.runing.mytest;
+package com.runing.testmodule;
 
 // Declare any non-default types here with import statements
-import com.runing.mytest.User;
+import com.runing.testmodule.User;
 
 interface UserManager {
 

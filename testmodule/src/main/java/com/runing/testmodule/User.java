@@ -1,4 +1,4 @@
-package com.runing.testmodule.sss;
+package com.runing.testmodule;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -35,6 +35,14 @@ public class User implements Parcelable {
 
   public void setAge(int age) {
     this.age = age;
+  }
+
+  @Override public String toString() {
+    return "User {\n" +
+        "  name='" + name + "\'\n" +
+        "  gender='" + gender + "\'\n" +
+        "  age=" + age + '\n' +
+        '}';
   }
 
   public User(String name, String gender, int age) {

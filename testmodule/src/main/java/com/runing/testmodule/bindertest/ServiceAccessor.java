@@ -1,19 +1,33 @@
-package com.runing.testmodule.sss;
+package com.runing.testmodule.bindertest;
 
 import android.os.IBinder;
+import android.os.IInterface;
 import android.os.Parcel;
 import android.os.RemoteException;
+
+import com.runing.testmodule.User;
 
 /**
  * Created by DSI on 2017/9/14.
  */
 
-public class ServiceAccessor implements UserRequest {
+public class ServiceAccessor implements UserContract {
 
   private IBinder mRemote;
 
-  public ServiceAccessor(IBinder mRemote) {
+  private ServiceAccessor(IBinder mRemote) {
     this.mRemote = mRemote;
+  }
+
+  public static ServiceAccessor asInterface(IBinder iBinder) {
+    if (iBinder == null) {
+      return null;
+    }
+    IInterface iInterface = iBinder.queryLocalInterface(DESCRIPTOR);
+    if (iInterface != null && iInterface instanceof UserContract) {
+      return (ServiceAccessor) iInterface;
+    }
+    return new ServiceAccessor(iBinder);
   }
 
   @Override public void setUser(User user) throws RemoteException {
