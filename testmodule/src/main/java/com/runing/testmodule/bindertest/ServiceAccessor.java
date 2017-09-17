@@ -19,13 +19,13 @@ public class ServiceAccessor implements UserContract {
     this.mRemote = mRemote;
   }
 
-  public static ServiceAccessor asInterface(IBinder iBinder) {
+  public static UserContract asInterface(IBinder iBinder) {
     if (iBinder == null) {
       return null;
     }
     IInterface iInterface = iBinder.queryLocalInterface(DESCRIPTOR);
     if (iInterface != null && iInterface instanceof UserContract) {
-      return (ServiceAccessor) iInterface;
+      return (UserContract) iInterface;
     }
     return new ServiceAccessor(iBinder);
   }

@@ -16,11 +16,11 @@ public class UserService extends Service {
   public IBinder onBind(Intent intent) {
     return new UserClientHandler() {
       @Override public void setUser(User user) throws RemoteException {
-        Log.d(TAG, "user from client -> " + user);
+        Log.d(TAG, "user from client -> \n" + user);
       }
 
       @Override public User getUser() throws RemoteException {
-        return new User("service", "sss", 1);
+        return new User("service", "girl", 0);
       }
     };
   }
