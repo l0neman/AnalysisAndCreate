@@ -1,1 +1,1 @@
-include ':coordinateandscroll', ':publictools', ':aidltest', ':rxjavatest'
+include ':coordinateandscroll', ':publictools', ':aidltest', ':rxjavatest', ':kotlintest'
